@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    
+}
+
+header{
+    min-height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    font-weight: 500;
+    font-size: 1.1em;
+    flex-wrap: wrap;
+}
+
+header ul li{
+    font-size: 26px;
+    margin: 8px;
+    padding: 5px;
+}
+
+.btn{
+    padding: 5px 25px 5px 25px;
+    background-color: #81C784;
+    border-radius:5%;
+    color: #235a26;
+}
+
+
+
+main{
+     width: 100%;
+     max-height: 60vh;
+     height: 100%;
+}
+
+
+.imagem-central{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+
+.secao-benefícios {
+    width: 100%;
+    max-width: 1100px;  
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.secao-benefícios h2 {
+    font-size: 2rem; 
+    color: #2E7D32; 
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.beneficios-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+
+
+.beneficios-item{
+    flex: 1; 
+    min-width: 250px; 
+    padding: 0 25px; 
+    text-align: center;
+    border-right: 1px solid #E0E0E0; 
+}
+
+
+.beneficios-item:last-child {
+    border-right: none;
+}
+
+
+.beneficios-icone {
+    font-size: 3rem; 
+    color: #2E7D32;  
+    margin-bottom: 20px;
+}
+
+
+.beneficios-item h3 {
+    font-size: 1.25rem; 
+    color: #2E7D32; 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.beneficios-item p {
+    font-size: 0.9rem; 
+    color: #666; 
+    line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+    .beneficios-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .beneficios-item {
+        border-right: none; 
+        border-bottom: 1px solid #E0E0E0; 
+        margin-bottom: 30px; 
+        padding-bottom: 30px; 
+        width: 80%; 
+    }
+
+    .beneficios-item:last-child {
+        border-bottom: none; 
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
