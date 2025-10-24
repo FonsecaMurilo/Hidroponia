@@ -36,6 +36,10 @@ header ul li{
     padding: 5px;
 }
 
+header ul li:hover{
+    color:#2E7D32;
+    cursor: pointer;
+}
 .btn{
     padding: 5px 25px 5px 25px;
     background-color: #81C784;
@@ -43,7 +47,11 @@ header ul li{
     color: #235a26;
 }
 
-
+.btn:hover{
+    background-color: #81C784;
+    color: white;
+    cursor: pointer;
+}
 
 main{
      width: 100%;
@@ -143,4 +151,5 @@ footer{
         margin-bottom: 0;
         padding-bottom: 0;
     }
+
 }
